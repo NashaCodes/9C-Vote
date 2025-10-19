@@ -5,6 +5,9 @@ body {
     align-items: center;
     height: 100vh;
     flex-direction: column;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 .text:hover {
@@ -24,6 +27,11 @@ body {
     margin-top: 50px;          /* Space above */
     text-align: center;        /* Center it on the page */
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/* Ensure consistent spacing */
+button, h2, h3, img {
+    margin: 10px 0;
 }
 
 /* Base Button Styles */
@@ -59,13 +67,10 @@ button:active {
     background: linear-gradient(90deg, rgba(49, 175, 49, 1) 0%, rgba(34, 193, 195, 1) 100%);
 }
 
-.ath1, .ath2, .ath3, .ath4, .ath5, .ath6, .ath7 {
+.vote-btn {
     background: linear-gradient(90deg, rgba(255, 99, 71, 1) 0%, rgba(255, 165, 0, 1) 100%);
 }
 
-.suc1, .suc2, .suc3, .suc4, .suc5, .suc6, .suc7 {
-    background: linear-gradient(90deg, rgba(70, 130, 180, 1) 0%, rgba(100, 149, 237, 1) 100%);
-}
 
 /* Image Styles */
 .header-image {
@@ -138,4 +143,20 @@ h2 {
 
 audio {
     margin-top: 20px;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    h2 {
+        font-size: 24px;
+    }
+
+    button {
+        width: 120px;
+        font-size: 14px;
+    }
+
+    .logo {
+        width: 40px;
+    }
 }
